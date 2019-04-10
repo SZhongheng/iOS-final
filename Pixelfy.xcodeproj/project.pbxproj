@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24BF3361225DA7A300D64E11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BF3360225DA7A300D64E11 /* AppDelegate.swift */; };
+		24BF3363225DA7A300D64E11 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 24BF3362225DA7A300D64E11 /* GameScene.sks */; };
+		24BF3365225DA7A300D64E11 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 24BF3364225DA7A300D64E11 /* Actions.sks */; };
+		24BF3367225DA7A300D64E11 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BF3366225DA7A300D64E11 /* GameScene.swift */; };
+		24BF3369225DA7A300D64E11 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BF3368225DA7A300D64E11 /* GameViewController.swift */; };
+		24BF336C225DA7A300D64E11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24BF336A225DA7A300D64E11 /* Main.storyboard */; };
+		24BF336E225DA7A700D64E11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24BF336D225DA7A700D64E11 /* Assets.xcassets */; };
+		24BF3371225DA7A700D64E11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24BF336F225DA7A700D64E11 /* LaunchScreen.storyboard */; };
+		24BF337C225DA7A700D64E11 /* PixelfyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BF337B225DA7A700D64E11 /* PixelfyTests.swift */; };
+		24BF3387225DA7A700D64E11 /* PixelfyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BF3386225DA7A700D64E11 /* PixelfyUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24BF3378225DA7A700D64E11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24BF3355225DA7A300D64E11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24BF335C225DA7A300D64E11;
+			remoteInfo = Pixelfy;
+		};
+		24BF3383225DA7A700D64E11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24BF3355225DA7A300D64E11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24BF335C225DA7A300D64E11;
+			remoteInfo = Pixelfy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		24BF335D225DA7A300D64E11 /* Pixelfy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pixelfy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		24BF3360225DA7A300D64E11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		24BF3362225DA7A300D64E11 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		24BF3364225DA7A300D64E11 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		24BF3366225DA7A300D64E11 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		24BF3368225DA7A300D64E11 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		24BF336B225DA7A300D64E11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		24BF336D225DA7A700D64E11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		24BF3370225DA7A700D64E11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		24BF3372225DA7A700D64E11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24BF3377225DA7A700D64E11 /* PixelfyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PixelfyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24BF337B225DA7A700D64E11 /* PixelfyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelfyTests.swift; sourceTree = "<group>"; };
+		24BF337D225DA7A700D64E11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24BF3382225DA7A700D64E11 /* PixelfyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PixelfyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24BF3386225DA7A700D64E11 /* PixelfyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelfyUITests.swift; sourceTree = "<group>"; };
+		24BF3388225DA7A700D64E11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24BF335A225DA7A300D64E11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24BF3374225DA7A700D64E11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24BF337F225DA7A700D64E11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24BF3354225DA7A300D64E11 = {
+			isa = PBXGroup;
+			children = (
+				24BF335F225DA7A300D64E11 /* Pixelfy */,
+				24BF337A225DA7A700D64E11 /* PixelfyTests */,
+				24BF3385225DA7A700D64E11 /* PixelfyUITests */,
+				24BF335E225DA7A300D64E11 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		24BF335E225DA7A300D64E11 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24BF335D225DA7A300D64E11 /* Pixelfy.app */,
+				24BF3377225DA7A700D64E11 /* PixelfyTests.xctest */,
+				24BF3382225DA7A700D64E11 /* PixelfyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24BF335F225DA7A300D64E11 /* Pixelfy */ = {
+			isa = PBXGroup;
+			children = (
+				24BF3360225DA7A300D64E11 /* AppDelegate.swift */,
+				24BF3362225DA7A300D64E11 /* GameScene.sks */,
+				24BF3364225DA7A300D64E11 /* Actions.sks */,
+				24BF3366225DA7A300D64E11 /* GameScene.swift */,
+				24BF3368225DA7A300D64E11 /* GameViewController.swift */,
+				24BF336A225DA7A300D64E11 /* Main.storyboard */,
+				24BF336D225DA7A700D64E11 /* Assets.xcassets */,
+				24BF336F225DA7A700D64E11 /* LaunchScreen.storyboard */,
+				24BF3372225DA7A700D64E11 /* Info.plist */,
+			);
+			path = Pixelfy;
+			sourceTree = "<group>";
+		};
+		24BF337A225DA7A700D64E11 /* PixelfyTests */ = {
+			isa = PBXGroup;
+			children = (
+				24BF337B225DA7A700D64E11 /* PixelfyTests.swift */,
+				24BF337D225DA7A700D64E11 /* Info.plist */,
+			);
+			path = PixelfyTests;
+			sourceTree = "<group>";
+		};
+		24BF3385225DA7A700D64E11 /* PixelfyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				24BF3386225DA7A700D64E11 /* PixelfyUITests.swift */,
+				24BF3388225DA7A700D64E11 /* Info.plist */,
+			);
+			path = PixelfyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24BF335C225DA7A300D64E11 /* Pixelfy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24BF338B225DA7A700D64E11 /* Build configuration list for PBXNativeTarget "Pixelfy" */;
+			buildPhases = (
+				24BF3359225DA7A300D64E11 /* Sources */,
+				24BF335A225DA7A300D64E11 /* Frameworks */,
+				24BF335B225DA7A300D64E11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pixelfy;
+			productName = Pixelfy;
+			productReference = 24BF335D225DA7A300D64E11 /* Pixelfy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		24BF3376225DA7A700D64E11 /* PixelfyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24BF338E225DA7A700D64E11 /* Build configuration list for PBXNativeTarget "PixelfyTests" */;
+			buildPhases = (
+				24BF3373225DA7A700D64E11 /* Sources */,
+				24BF3374225DA7A700D64E11 /* Frameworks */,
+				24BF3375225DA7A700D64E11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24BF3379225DA7A700D64E11 /* PBXTargetDependency */,
+			);
+			name = PixelfyTests;
+			productName = PixelfyTests;
+			productReference = 24BF3377225DA7A700D64E11 /* PixelfyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		24BF3381225DA7A700D64E11 /* PixelfyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24BF3391225DA7A700D64E11 /* Build configuration list for PBXNativeTarget "PixelfyUITests" */;
+			buildPhases = (
+				24BF337E225DA7A700D64E11 /* Sources */,
+				24BF337F225DA7A700D64E11 /* Frameworks */,
+				24BF3380225DA7A700D64E11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24BF3384225DA7A700D64E11 /* PBXTargetDependency */,
+			);
+			name = PixelfyUITests;
+			productName = PixelfyUITests;
+			productReference = 24BF3382225DA7A700D64E11 /* PixelfyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24BF3355225DA7A300D64E11 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = nyu.edu;
+				TargetAttributes = {
+					24BF335C225DA7A300D64E11 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					24BF3376225DA7A700D64E11 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 24BF335C225DA7A300D64E11;
+					};
+					24BF3381225DA7A700D64E11 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 24BF335C225DA7A300D64E11;
+					};
+				};
+			};
+			buildConfigurationList = 24BF3358225DA7A300D64E11 /* Build configuration list for PBXProject "Pixelfy" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 24BF3354225DA7A300D64E11;
+			productRefGroup = 24BF335E225DA7A300D64E11 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24BF335C225DA7A300D64E11 /* Pixelfy */,
+				24BF3376225DA7A700D64E11 /* PixelfyTests */,
+				24BF3381225DA7A700D64E11 /* PixelfyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24BF335B225DA7A300D64E11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24BF336C225DA7A300D64E11 /* Main.storyboard in Resources */,
+				24BF3363225DA7A300D64E11 /* GameScene.sks in Resources */,
+				24BF336E225DA7A700D64E11 /* Assets.xcassets in Resources */,
+				24BF3371225DA7A700D64E11 /* LaunchScreen.storyboard in Resources */,
+				24BF3365225DA7A300D64E11 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24BF3375225DA7A700D64E11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24BF3380225DA7A700D64E11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24BF3359225DA7A300D64E11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24BF3367225DA7A300D64E11 /* GameScene.swift in Sources */,
+				24BF3369225DA7A300D64E11 /* GameViewController.swift in Sources */,
+				24BF3361225DA7A300D64E11 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24BF3373225DA7A700D64E11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24BF337C225DA7A700D64E11 /* PixelfyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24BF337E225DA7A700D64E11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24BF3387225DA7A700D64E11 /* PixelfyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24BF3379225DA7A700D64E11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24BF335C225DA7A300D64E11 /* Pixelfy */;
+			targetProxy = 24BF3378225DA7A700D64E11 /* PBXContainerItemProxy */;
+		};
+		24BF3384225DA7A700D64E11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24BF335C225DA7A300D64E11 /* Pixelfy */;
+			targetProxy = 24BF3383225DA7A700D64E11 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		24BF336A225DA7A300D64E11 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24BF336B225DA7A300D64E11 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		24BF336F225DA7A700D64E11 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24BF3370225DA7A700D64E11 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		24BF3389225DA7A700D64E11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		24BF338A225DA7A700D64E11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24BF338C225DA7A700D64E11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Pixelfy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nyu.edu.Pixelfy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		24BF338D225DA7A700D64E11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Pixelfy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nyu.edu.Pixelfy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		24BF338F225DA7A700D64E11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PixelfyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nyu.edu.PixelfyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pixelfy.app/Pixelfy";
+			};
+			name = Debug;
+		};
+		24BF3390225DA7A700D64E11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PixelfyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nyu.edu.PixelfyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pixelfy.app/Pixelfy";
+			};
+			name = Release;
+		};
+		24BF3392225DA7A700D64E11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PixelfyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nyu.edu.PixelfyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pixelfy;
+			};
+			name = Debug;
+		};
+		24BF3393225DA7A700D64E11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PixelfyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nyu.edu.PixelfyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pixelfy;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24BF3358225DA7A300D64E11 /* Build configuration list for PBXProject "Pixelfy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24BF3389225DA7A700D64E11 /* Debug */,
+				24BF338A225DA7A700D64E11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24BF338B225DA7A700D64E11 /* Build configuration list for PBXNativeTarget "Pixelfy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24BF338C225DA7A700D64E11 /* Debug */,
+				24BF338D225DA7A700D64E11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24BF338E225DA7A700D64E11 /* Build configuration list for PBXNativeTarget "PixelfyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24BF338F225DA7A700D64E11 /* Debug */,
+				24BF3390225DA7A700D64E11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24BF3391225DA7A700D64E11 /* Build configuration list for PBXNativeTarget "PixelfyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24BF3392225DA7A700D64E11 /* Debug */,
+				24BF3393225DA7A700D64E11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 24BF3355225DA7A300D64E11 /* Project object */;
+}
