@@ -30,6 +30,7 @@ class GameViewController: UIViewController {
             
             
             lets see;
+            I see it;
             
             
             
