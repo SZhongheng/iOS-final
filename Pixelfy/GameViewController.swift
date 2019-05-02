@@ -29,7 +29,7 @@ class GameViewController: UIViewController {
             
             
             
-            view.sdfs;
+            lets see;
             
             
             
