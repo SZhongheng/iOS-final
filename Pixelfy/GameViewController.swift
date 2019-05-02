@@ -31,6 +31,7 @@ class GameViewController: UIViewController {
             
             lets see;
             I see it;
+            my name is juan;
             
             
             
