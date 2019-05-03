@@ -9,84 +9,149 @@
 import SpriteKit
 import GameplayKit
 
+
 class GameScene: SKScene {
     
-    private var label : SKLabelNode?
-    private var spinnyNode : SKShapeNode?
+    var upButton:SKSpriteNode?
+    var downButton:SKSpriteNode?
+    var leftButton:SKSpriteNode?
+    var rightButton:SKSpriteNode?
+    var aButton:SKSpriteNode?
+    var bButton:SKSpriteNode?
+    var startButton:SKSpriteNode?
+    var player:SKSpriteNode?
+    
+    //var led:SKSpriteNode?
+    //var sprite:SKSpriteNode?
+    
+    
+    
+    
+    
+    
+    
+    
     
     override func didMove(to view: SKView) {
         
-        // Get label node from scene and store it for use later
-        self.label = self.childNode(withName: "//helloLabel") as? SKLabelNode
-        if let label = self.label {
-            label.alpha = 0.0
-            label.run(SKAction.fadeIn(withDuration: 2.0))
-        }
+        upButton = self.childNode(withName: "upButton") as? SKSpriteNode
+        downButton = self.childNode(withName: "downButton") as? SKSpriteNode
+        leftButton = self.childNode(withName: "leftButton") as? SKSpriteNode
+        rightButton = self.childNode(withName: "rightButton") as? SKSpriteNode
+        aButton = self.childNode(withName: "aButton") as? SKSpriteNode
+        bButton = self.childNode(withName: "bButton") as? SKSpriteNode
+        startButton = self.childNode(withName: "startButton") as? SKSpriteNode
+    
+        //player = self.childNode(withName: "player") as? SKSpriteNode
         
+        makeGrid()
+        player = self.childNode(withName: "player") as? SKSpriteNode
+        player?.zPosition = 20
         
-        
-        
-        // Create shape node to use during mouse interaction
-        let w = (self.size.width + self.size.height) * 0.05
-        self.spinnyNode = SKShapeNode.init(rectOf: CGSize.init(width: w, height: w), cornerRadius: w * 0.3)
-        
-        if let spinnyNode = self.spinnyNode {
-            spinnyNode.lineWidth = 2.5
-            
-            spinnyNode.run(SKAction.repeatForever(SKAction.rotate(byAngle: CGFloat(Double.pi), duration: 1)))
-            spinnyNode.run(SKAction.sequence([SKAction.wait(forDuration: 0.5),
-                                              SKAction.fadeOut(withDuration: 0.5),
-                                              SKAction.removeFromParent()]))
-        }
-    }
     
     
-    func touchDown(atPoint pos : CGPoint) {
-        if let n = self.spinnyNode?.copy() as! SKShapeNode? {
-            n.position = pos
-            n.strokeColor = SKColor.green
-            self.addChild(n)
-        }
-    }
     
-    func touchMoved(toPoint pos : CGPoint) {
-        if let n = self.spinnyNode?.copy() as! SKShapeNode? {
-            n.position = pos
-            n.strokeColor = SKColor.blue
-            self.addChild(n)
-        }
-    }
     
-    func touchUp(atPoint pos : CGPoint) {
-        if let n = self.spinnyNode?.copy() as! SKShapeNode? {
-            n.position = pos
-            n.strokeColor = SKColor.red
-            self.addChild(n)
-        }
+    
+    
+    
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if let label = self.label {
-            label.run(SKAction.init(named: "Pulse")!, withKey: "fadeInOut")
+        if let touch = touches.first {
+            let location = touch.previousLocation(in: self)
+            let node = self.nodes(at: location).first
+            
+            if node?.name == "rightButton" {
+                moveRight()
+                
+            }
+            else if node?.name == "leftButton" {
+                moveLeft()
+            }
+            else if node?.name == "downButton" {
+                
+            }
+            else if node?.name == "upButton" {
+                
+            }
+            
+            else if node?.name == "pause", let scene = self.scene {
+                if scene.isPaused {
+                    scene.isPaused = false
+                }else {
+                    scene.isPaused = true
+                }
+            }
+        }
+    }
+    
+    
+    func moveRight () {
+        
+        let moveAction = SKAction.moveBy(x:90, y:0, duration: 0)
+        
+        player?.run(moveAction)
+    
+    }
+    
+    func moveLeft () {
+        
+        let moveAction = SKAction.moveBy(x:-90, y:0, duration: 0)
+        
+        player?.run(moveAction)
+        
+    }
+    
+    
+    func makeLed()-> SKNode{
+        
+        let testLed = SKSpriteNode(color: SKColor.blue, size: CGSize(width: 85, height: 85))
+        
+        testLed.name = "lll"
+        
+        return testLed
+        
+    }
+    
+    
+    
+    func makeGrid(){
+        
+        let location = CGPoint(x: -316, y: -60)
+        
+        for i in 0...7 {
+        
+            let ledPosY = CGFloat(i) * (90) + location.y
+            var ledPosition = CGPoint(x: location.x, y: ledPosY)
+            
+            
+            for _ in 0...7 {
+                
+                let led = makeLed()
+                led.position = ledPosition
+                addChild(led)
+                ledPosition = CGPoint(x: ledPosition.x + 90, y: ledPosY)
+                
+            }
         }
         
-        for t in touches { self.touchDown(atPoint: t.location(in: self)) }
+        
+        
     }
+        
+        
+        
+        
+        
     
-    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        for t in touches { self.touchMoved(toPoint: t.location(in: self)) }
-    }
-    
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        for t in touches { self.touchUp(atPoint: t.location(in: self)) }
-    }
-    
-    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
-        for t in touches { self.touchUp(atPoint: t.location(in: self)) }
-    }
     
     
     override func update(_ currentTime: TimeInterval) {
-        // Called before each frame is rendered
+        
     }
+    
+    
+    
+    
 }
