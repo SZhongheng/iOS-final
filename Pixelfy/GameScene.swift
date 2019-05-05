@@ -27,6 +27,8 @@ class GameScene: SKScene {
     var moveCounter = 0
     var trackArray: [SKSpriteNode]? = [SKSpriteNode]()
     
+    //var enemySprite:SKSpriteNode?
+    
     //var led:SKSpriteNode?
     //var sprite:SKSpriteNode?
     
@@ -55,7 +57,7 @@ class GameScene: SKScene {
         player?.zPosition = 20
       
         self.run(SKAction.repeatForever(SKAction.sequence([SKAction.run{
-        self.spawnEnemy()
+            self.spawnEnemy()
             }, SKAction.wait(forDuration: 1)]))) //spawn per sec
     
     
@@ -164,23 +166,42 @@ class GameScene: SKScene {
     
     
     func createEnemy (forTrack track:Int) -> SKSpriteNode? {
-        let enemySprite = SKSpriteNode (color: SKColor.green, size: CGSize(width: 85, height: 85)) //initializing
+        
+        //enemySprite = self.childNode(withName: "led") as? SKSpriteNode
+        
+        let enemySprite = SKSpriteNode (color: SKColor.green, size: CGSize(width: 85, height: 85))//initializing
         enemySprite.name = "ENEMY"
 
         guard let enemyPosition = trackArray?[track].position else {return nil}
         enemySprite.position.x = enemyPosition.x
         enemySprite.position.y = 570
         
+        
+        
+        
+        
         //enemySprite.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: 85, height: 85))
         //enemySprite.physicsBody?.velocity = CGVector(dx: 0, dy: -1)
        let moveAction = SKAction.moveBy(x:0, y:-90, duration: 1) //-90 units of space in 1 second
-        enemySprite.run(moveAction)
-        enemySprite.run(moveAction)
-        enemySprite.run(moveAction)
-        enemySprite.run(moveAction)
-        enemySprite.run(moveAction)
-        enemySprite.run(moveAction)
-        enemySprite.run(moveAction)
+        //enemySprite.run(moveAction)
+        
+        
+        for _ in 0...6{
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 5){
+            
+                self.moveEnemy(sprite: enemySprite)
+            }
+        }
+        
+    
+        //enemySprite.run(moveAction)
+        //enemySprite.run(moveAction)
+        //enemySprite.run(moveAction)
+        ///enemySprite.run(moveAction)
+        //enemySprite.run(moveAction)
+        //enemySprite.run(moveAction)
+        //enemySprite.run(moveAction)
         
         
         return enemySprite
@@ -188,11 +209,25 @@ class GameScene: SKScene {
         
         
     func spawnEnemy(){
+       
+        
+        
+        
+        
+        
+        
+        
+        
         for i in 1...9 { //for the 9 rows
             let number = Int.random(in: 0...9) //spawning at 11.11%
             if let newEnemy = (createEnemy(forTrack: i)) {
                 if number == 1 {
-                self.addChild(newEnemy)
+                    self.addChild(newEnemy)
+                    //moveEnemy(sprite: newEnemy)
+                    
+
+                    
+                    
                 }
             }
         }
@@ -201,10 +236,30 @@ class GameScene: SKScene {
                 node.removeFromParent() //removes nodes after exiting the screen to reduce memory loss
             }
         }
-    }
+ 
+ 
         
+    }
     
+    func moveEnemy (sprite: SKSpriteNode) {
+        
+        let moveAction = SKAction.moveBy(x:0, y:-90, duration: 0)
+        
+        
+        sprite.run(moveAction)
+        
+        
+    }
     
+        
+    public static func runThisAfterDelay(seconds: Double, after: @escaping () -> Void) {
+        runThisAfterDelay(seconds: seconds, queue: DispatchQueue.main, after: after)
+    }
+    
+    public static func runThisAfterDelay(seconds: Double, queue: DispatchQueue, after: @escaping () -> Void) {
+        let time = DispatchTime.now() + Double(Int64(seconds * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)
+        queue.asyncAfter(deadline: time, execute: after)
+    }
     
     override func update(_ currentTime: TimeInterval) {
         
