@@ -13,7 +13,7 @@ import SpriteKit
 class GameOverScene: SKScene {
     
     static var score = 0
-    var scoreLabel: SKLabelNode!
+    //var scoreLabel: SKLabelNode!
     var playButton:SKSpriteNode?
     var gameScene:SKScene!
     var bestLabel:SKLabelNode?
@@ -30,22 +30,7 @@ class GameOverScene: SKScene {
         currentLabel?.text = "\(GameHandler.sharedInstance.score)"
         bestLabel?.text = "\(GameHandler.sharedInstance.highScore)"
         
-        
-        
-        
-        //let s = scoreLabel?.text = "\(GameScene.score)"
-        
-        
-        //let str2 = String(s)
-        //scoreLabel.text = str2
-        
-        
-        
-        
-        
-        
-        
-        
+
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -62,8 +47,6 @@ class GameOverScene: SKScene {
                 
             }
         }
-        
-        
         
     }
     

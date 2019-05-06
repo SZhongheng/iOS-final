@@ -18,6 +18,12 @@
 		24855E66227EDA2E008835BF /* GameOverScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 24855E65227EDA2E008835BF /* GameOverScene.sks */; };
 		24855E68227EDB67008835BF /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24855E67227EDB67008835BF /* GameOverScene.swift */; };
 		24855E6A227FD1AD008835BF /* GameHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24855E69227FD1AD008835BF /* GameHandler.swift */; };
+		24855E6C228000DB008835BF /* PixelfyLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 24855E6B228000DB008835BF /* PixelfyLogo.png */; };
+		24855E6E22800C32008835BF /* pixelfyLaunchX.png in Resources */ = {isa = PBXBuildFile; fileRef = 24855E6D22800C31008835BF /* pixelfyLaunchX.png */; };
+		24855E7022800EE8008835BF /* pixelfyLaunchXmax.png in Resources */ = {isa = PBXBuildFile; fileRef = 24855E6F22800EE7008835BF /* pixelfyLaunchXmax.png */; };
+		24855E7222801B1A008835BF /* pixelfybackgroundX.png in Resources */ = {isa = PBXBuildFile; fileRef = 24855E7122801B1A008835BF /* pixelfybackgroundX.png */; };
+		24855E7422801D14008835BF /* pausebackgroundX.png in Resources */ = {isa = PBXBuildFile; fileRef = 24855E7322801D13008835BF /* pausebackgroundX.png */; };
+		24855E7622801E54008835BF /* playagain.png in Resources */ = {isa = PBXBuildFile; fileRef = 24855E7522801E53008835BF /* playagain.png */; };
 		24BF3361225DA7A300D64E11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BF3360225DA7A300D64E11 /* AppDelegate.swift */; };
 		24BF3363225DA7A300D64E11 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 24BF3362225DA7A300D64E11 /* GameScene.sks */; };
 		24BF3365225DA7A300D64E11 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 24BF3364225DA7A300D64E11 /* Actions.sks */; };
@@ -59,6 +65,12 @@
 		24855E65227EDA2E008835BF /* GameOverScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameOverScene.sks; sourceTree = "<group>"; };
 		24855E67227EDB67008835BF /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
 		24855E69227FD1AD008835BF /* GameHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameHandler.swift; sourceTree = "<group>"; };
+		24855E6B228000DB008835BF /* PixelfyLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PixelfyLogo.png; sourceTree = "<group>"; };
+		24855E6D22800C31008835BF /* pixelfyLaunchX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pixelfyLaunchX.png; sourceTree = "<group>"; };
+		24855E6F22800EE7008835BF /* pixelfyLaunchXmax.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pixelfyLaunchXmax.png; sourceTree = "<group>"; };
+		24855E7122801B1A008835BF /* pixelfybackgroundX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pixelfybackgroundX.png; sourceTree = "<group>"; };
+		24855E7322801D13008835BF /* pausebackgroundX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pausebackgroundX.png; sourceTree = "<group>"; };
+		24855E7522801E53008835BF /* playagain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playagain.png; sourceTree = "<group>"; };
 		24BF335D225DA7A300D64E11 /* Pixelfy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pixelfy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24BF3360225DA7A300D64E11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24BF3362225DA7A300D64E11 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -114,6 +126,12 @@
 				24855E17227BB723008835BF /* buttonH.png */,
 				24855E19227BB724008835BF /* buttons.png */,
 				24855E15227BB723008835BF /* start.png */,
+				24855E6B228000DB008835BF /* PixelfyLogo.png */,
+				24855E6D22800C31008835BF /* pixelfyLaunchX.png */,
+				24855E6F22800EE7008835BF /* pixelfyLaunchXmax.png */,
+				24855E7122801B1A008835BF /* pixelfybackgroundX.png */,
+				24855E7322801D13008835BF /* pausebackgroundX.png */,
+				24855E7522801E53008835BF /* playagain.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -273,10 +291,16 @@
 			files = (
 				24BF336C225DA7A300D64E11 /* Main.storyboard in Resources */,
 				24855E1B227BB724008835BF /* B.png in Resources */,
+				24855E7222801B1A008835BF /* pixelfybackgroundX.png in Resources */,
 				24855E1C227BB724008835BF /* buttonH.png in Resources */,
+				24855E6E22800C32008835BF /* pixelfyLaunchX.png in Resources */,
 				24BF3363225DA7A300D64E11 /* GameScene.sks in Resources */,
+				24855E7022800EE8008835BF /* pixelfyLaunchXmax.png in Resources */,
 				24855E66227EDA2E008835BF /* GameOverScene.sks in Resources */,
+				24855E7622801E54008835BF /* playagain.png in Resources */,
 				24BF336E225DA7A700D64E11 /* Assets.xcassets in Resources */,
+				24855E7422801D14008835BF /* pausebackgroundX.png in Resources */,
+				24855E6C228000DB008835BF /* PixelfyLogo.png in Resources */,
 				24BF3371225DA7A700D64E11 /* LaunchScreen.storyboard in Resources */,
 				24855E1D227BB724008835BF /* A.png in Resources */,
 				24855E1E227BB724008835BF /* buttons.png in Resources */,

@@ -21,13 +21,16 @@ class StartScene: SKScene {
     override func didMove(to view: SKView) {
         playButton = self.childNode(withName: "playButton") as? SKSpriteNode
         
+        let background = SKSpriteNode(imageNamed: "pixelfyLaunchX")
+         background.position = CGPoint(x: size.width/2, y: size.height/2)
+        background.zPosition = -1
+        background.size = self.frame.size;
+        //background.position = CGPoint(x: size.width/2, y: size.height/2)
+        //background.anchorPoint = CGPoint(x: 0.5, y: 0.5) // default
+        //background.scale
+        //addChild(background)
         
-        
-        
-       
-        
-        
-        
+  
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -44,8 +47,6 @@ class StartScene: SKScene {
                 
             }
         }
- 
- 
  
     }
     

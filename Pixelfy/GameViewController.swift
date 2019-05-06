@@ -13,14 +13,10 @@ import GameplayKit
 class GameViewController: UIViewController {
     
 
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
-        
-    
+
         if let view = self.view as! SKView? {
             
             if let scene = SKScene(fileNamed: "StartScene") {
@@ -33,13 +29,12 @@ class GameViewController: UIViewController {
             
             view.ignoresSiblingOrder = true
             
-            view.showsFPS = true
-            view.showsNodeCount = true
-            view.showsPhysics = true
+            view.showsFPS = false
+            view.showsNodeCount = false
+            view.showsPhysics = false
         }
         
-        
-        
+ 
     }
     
     override var shouldAutorotate: Bool {
@@ -63,18 +58,7 @@ class GameViewController: UIViewController {
         return true
     }
     
-    
-    
- 
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
 
 }
 
