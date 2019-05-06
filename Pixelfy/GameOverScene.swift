@@ -16,14 +16,22 @@ class GameOverScene: SKScene {
     var scoreLabel: SKLabelNode!
     var playButton:SKSpriteNode?
     var gameScene:SKScene!
+    var bestLabel:SKLabelNode?
+    var currentLabel:SKLabelNode?
     
     
     override func didMove(to view: SKView) {
         
         
         playButton = self.childNode(withName: "playButton") as? SKSpriteNode
+        bestLabel = self.childNode(withName: "highScore") as? SKLabelNode
+        currentLabel = self.childNode(withName: "currentScore") as? SKLabelNode
         
-        scoreLabel = self.childNode(withName: "scoreLabel") as? SKLabelNode
+        currentLabel?.text = "\(GameHandler.sharedInstance.score)"
+        bestLabel?.text = "\(GameHandler.sharedInstance.highScore)"
+        
+        
+        
         
         //let s = scoreLabel?.text = "\(GameScene.score)"
         
