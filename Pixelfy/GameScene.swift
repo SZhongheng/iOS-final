@@ -32,7 +32,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             self.timeLabel?.text = "SCORE: \(self.currentScore)"
             GameHandler.sharedInstance.score = currentScore
             
-        }
+        }//setting up game score using singleton
         
     }
     
@@ -40,16 +40,19 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     var trackArray: [SKSpriteNode]? = [SKSpriteNode]()
     var ledArray: [SKSpriteNode]? = [SKSpriteNode]()
+
     
     
     
-    let playerCategory:UInt32 = 0x1 << 0
-    let enemyCategory:UInt32 = 0x1 << 1
+    let playerCategory:UInt32 = 0x1 << 0 //player bitmask
+    let enemyCategory:UInt32 = 0x1 << 1 //enemy bitmask
     
     //var led:SKSpriteNode?
     //var sprite:SKSpriteNode?
     
-    var led1:SKSpriteNode?
+    
+
+   /* var led1:SKSpriteNode?
     var led2:SKSpriteNode?
     var led3:SKSpriteNode?
     var led4:SKSpriteNode?
@@ -335,28 +338,32 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var led281:SKSpriteNode?
     var led282:SKSpriteNode?
     var led283:SKSpriteNode?
-    var led284:SKSpriteNode?
+     */
+    var led283:SKSpriteNode?
+ 
+ 
     var t = 0.2;
 
     override func didMove(to view: SKView) {
         
         self.physicsWorld.contactDelegate = self
         
-        createHUD()
-        launchTime()
-        
-        upButton = self.childNode(withName: "upButton") as? SKSpriteNode
-        downButton = self.childNode(withName: "downButton") as? SKSpriteNode
-        leftButton = self.childNode(withName: "leftButton") as? SKSpriteNode
-        rightButton = self.childNode(withName: "rightButton") as? SKSpriteNode
+        createHUD() //intialize HUD
+        launchTime() //initialize score
+        led283 = self.childNode(withName: "led283") as? SKSpriteNode
+        upButton = self.childNode(withName: "upButton") as? SKSpriteNode //directional buttons
+        downButton = self.childNode(withName: "downButton") as? SKSpriteNode //directional buttons
+        leftButton = self.childNode(withName: "leftButton") as? SKSpriteNode //directional buttons
+        rightButton = self.childNode(withName: "rightButton") as? SKSpriteNode //directional buttons
         aButton = self.childNode(withName: "aButton") as? SKSpriteNode
-        bButton = self.childNode(withName: "bButton") as? SKSpriteNode
+        bButton = self.childNode(withName: "bButton") as? SKSpriteNode //useless for now
         startButton = self.childNode(withName: "startButton") as? SKSpriteNode
+        let backgroundSound = SKAudioNode(fileNamed: "bgm.mp3") //music
+        self.addChild(backgroundSound)
         
         //player = self.childNode(withName: "player") as? SKSpriteNode
         
         makeGrid()
-        
         makeTrack()
         player = self.childNode(withName: "player") as? SKSpriteNode
         player?.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: 80, height: 80))
@@ -366,6 +373,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         player?.zPosition = 20
         
         
+       
+        
+     
+
         
         //let str2 = String(score)
         //scoreLabel.text = str2
@@ -432,6 +443,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         timeLabel = self.childNode(withName: "score") as? SKLabelNode
     }
     
+    
+    
     func launchTime(){
         let timeAction = SKAction.repeatForever(SKAction.sequence([SKAction.run ({
             self.currentScore += 1
@@ -470,7 +483,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
     }
     
-    func scrollDown(){
+    func scrollDown(){   //moving all the led at once for -90 in 0 secs, to make it resemble an led action
         
         let moveAction = SKAction.moveBy(x:0, y:-90, duration: 0)
        
@@ -486,7 +499,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     
-    func makeLed()-> SKSpriteNode{
+    func makeLed()-> SKSpriteNode{ //creating background
         
         let testLed = SKSpriteNode(color: SKColor.cyan, size: CGSize(width: 85, height: 85))
         
@@ -498,7 +511,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     
     
-    func makeGrid(){
+    func makeGrid(){ //creating the grids
         
         let location = CGPoint(x: -316, y: -60)
         
@@ -524,6 +537,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
 
     func didBegin(_ contact: SKPhysicsContact) {
+        //physics using bitmask
         var playerBody:SKPhysicsBody
         var otherBody:SKPhysicsBody
         
@@ -542,7 +556,18 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     func makeTrack(){
         
-        led1 = self.childNode(withName: "led1") as? SKSpriteNode
+        //making 284 obstacle leds
+        for i in 1...284 {
+            if let node = self.childNode(withName: "led\(i)") as? SKSpriteNode{
+                node.physicsBody?.categoryBitMask = enemyCategory
+                node.physicsBody?.collisionBitMask = 0
+                ledArray?.append(node)
+            }
+            
+            
+    }
+    }
+       /* led1 = self.childNode(withName: "led1") as? SKSpriteNode
         led1?.physicsBody?.categoryBitMask = enemyCategory
         led1?.physicsBody?.collisionBitMask = 0
         ledArray?.append(led1!)
@@ -1538,9 +1563,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         ledArray?.append(led284!)
 
     }
+ */
+    
     
     func moveTrackBackUp(){
-        
+        //moving track back up when round is over
         for i in ledArray!{
             
             i.position.y = i.position.y + 10170;
@@ -1554,7 +1581,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     func gameOver() {
-        
+        //handles gameover
         GameHandler.sharedInstance.saveGameStats()
         let transition = SKTransition.fade(withDuration: 0)
         if let gameOverScene = SKScene(fileNamed: "GameOverScene") {
@@ -1566,3 +1593,5 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
 }
+
+

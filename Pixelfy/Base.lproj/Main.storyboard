@@ -1,29 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jS8-fD-ex4">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Game View Controller-->
-        <scene sceneID="tXr-a1-R10">
+        <!--Start View Controller-->
+        <scene sceneID="sP8-6g-G0w">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="Pixelfy" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="jS8-fD-ex4" customClass="StartViewController" customModule="Pixelfy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MGm-4a-NaT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="PixelfyLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Awn-UM-7nC">
+                                <rect key="frame" x="127" y="244" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Awn-UM-7nC" secondAttribute="height" multiplier="1:1" id="ls9-Hc-YJ3"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ytg-yp-Evj" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="680" width="375" height="53"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3yY-Qo-eX0">
+                                <rect key="frame" x="0.0" y="532" width="375" height="69"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="20" maxX="0.0" maxY="20"/>
+                                <state key="normal" title="LOGIN">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginTapped:" destination="jS8-fD-ex4" eventType="touchUpInside" id="Ow8-P8-tTo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.6249906475" green="1" blue="0.6250945443" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LJD-Ge-Utg" firstAttribute="bottom" secondItem="Ytg-yp-Evj" secondAttribute="bottom" constant="45" id="2QG-gT-3zf"/>
+                            <constraint firstAttribute="bottom" secondItem="3yY-Qo-eX0" secondAttribute="bottom" constant="211" id="6dk-JU-Bl2"/>
+                            <constraint firstItem="Awn-UM-7nC" firstAttribute="leading" secondItem="LJD-Ge-Utg" secondAttribute="leading" constant="127" id="Jua-vz-c56"/>
+                            <constraint firstItem="3yY-Qo-eX0" firstAttribute="trailing" secondItem="Ytg-yp-Evj" secondAttribute="trailing" id="KXU-2d-SeF"/>
+                            <constraint firstItem="3yY-Qo-eX0" firstAttribute="trailing" secondItem="LJD-Ge-Utg" secondAttribute="trailing" id="TVi-X2-zHr"/>
+                            <constraint firstItem="3yY-Qo-eX0" firstAttribute="leading" secondItem="LJD-Ge-Utg" secondAttribute="leading" id="VNZ-mS-PSm"/>
+                            <constraint firstItem="Awn-UM-7nC" firstAttribute="top" secondItem="LJD-Ge-Utg" secondAttribute="top" constant="175" id="bRb-xW-cnq"/>
+                            <constraint firstItem="3yY-Qo-eX0" firstAttribute="leading" secondItem="Ytg-yp-Evj" secondAttribute="leading" id="kCq-TW-Yga"/>
+                            <constraint firstItem="Ytg-yp-Evj" firstAttribute="top" secondItem="3yY-Qo-eX0" secondAttribute="bottom" constant="79" id="nOA-fC-5Yr"/>
+                            <constraint firstItem="LJD-Ge-Utg" firstAttribute="trailing" secondItem="Awn-UM-7nC" secondAttribute="trailing" constant="128" id="tn2-VD-RzF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LJD-Ge-Utg"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="E7F-dX-Oon"/>
+                    <connections>
+                        <outlet property="bannerView" destination="Ytg-yp-Evj" id="JM8-JU-4od"/>
+                        <segue destination="pfe-Q6-3wb" kind="show" identifier="goHome" id="Zff-ve-CGA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lV5-D1-bYx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1539.1304347826087" y="1063.858695652174"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="032-mK-7b9">
+            <objects>
+                <viewController id="pfe-Q6-3wb" customClass="GameViewController" customModule="Pixelfy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EWP-9j-Y9t" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
+                        <viewLayoutGuide key="safeArea" id="Acp-5M-cht"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VNa-JN-ZwG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53.600000000000001" y="26.53673163418291"/>
+            <point key="canvasLocation" x="-762" y="1033"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="PixelfyLogo" width="1024" height="1024"/>
+    </resources>
 </document>

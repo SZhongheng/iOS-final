@@ -9,6 +9,7 @@
 import Foundation
 
 class GameHandler {
+    //using singleton to save scores between different instances
     var score:Int
     var highScore:Int
     

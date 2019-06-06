@@ -14,10 +14,10 @@ class GameOverScene: SKScene {
     
     static var score = 0
     //var scoreLabel: SKLabelNode!
-    var playButton:SKSpriteNode?
+    var playButton:SKSpriteNode? //replay button
     var gameScene:SKScene!
-    var bestLabel:SKLabelNode?
-    var currentLabel:SKLabelNode?
+    var bestLabel:SKLabelNode? //high score
+    var currentLabel:SKLabelNode? //current score
     
     
     override func didMove(to view: SKView) {
@@ -27,6 +27,8 @@ class GameOverScene: SKScene {
         bestLabel = self.childNode(withName: "highScore") as? SKLabelNode
         currentLabel = self.childNode(withName: "currentScore") as? SKLabelNode
         
+        let backgroundSound = SKAudioNode(fileNamed: "over.mp3")
+        self.addChild(backgroundSound)
         currentLabel?.text = "\(GameHandler.sharedInstance.score)"
         bestLabel?.text = "\(GameHandler.sharedInstance.highScore)"
         

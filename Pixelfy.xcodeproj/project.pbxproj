@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05A27C94A5BAEBA4309007C3 /* Pods_PixelfyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 058B2CA7AF2122BD1F1F5D43 /* Pods_PixelfyUITests.framework */; };
 		24855E1A227BB724008835BF /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = 24855E15227BB723008835BF /* start.png */; };
 		24855E1B227BB724008835BF /* B.png in Resources */ = {isa = PBXBuildFile; fileRef = 24855E16227BB723008835BF /* B.png */; };
 		24855E1C227BB724008835BF /* buttonH.png in Resources */ = {isa = PBXBuildFile; fileRef = 24855E17227BB723008835BF /* buttonH.png */; };
@@ -34,6 +35,13 @@
 		24BF3371225DA7A700D64E11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24BF336F225DA7A700D64E11 /* LaunchScreen.storyboard */; };
 		24BF337C225DA7A700D64E11 /* PixelfyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BF337B225DA7A700D64E11 /* PixelfyTests.swift */; };
 		24BF3387225DA7A700D64E11 /* PixelfyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BF3386225DA7A700D64E11 /* PixelfyUITests.swift */; };
+		7F2AFCBA508549414390E533 /* Pods_PixelfyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C558B16F0C6DA5F9128E278C /* Pods_PixelfyTests.framework */; };
+		A803F5DF34D7E5EFD692A719 /* Pods_Pixelfy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABEB99A75F55608CA52B4939 /* Pods_Pixelfy.framework */; };
+		D2C5496A22824B5C0014A01E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2C5496922824B5C0014A01E /* GoogleService-Info.plist */; };
+		D2C5496C22826D200014A01E /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C5496B22826D200014A01E /* StartViewController.swift */; };
+		D2C54974228C76800014A01E /* bgm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D2C54973228C76800014A01E /* bgm.mp3 */; };
+		D2C54976228C78B50014A01E /* over.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D2C54975228C78B50014A01E /* over.mp3 */; };
+		D2C54978228C91DF0014A01E /* readme.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D2C54977228C91DF0014A01E /* readme.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +62,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		058B2CA7AF2122BD1F1F5D43 /* Pods_PixelfyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PixelfyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24855E15227BB723008835BF /* start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start.png; sourceTree = "<group>"; };
 		24855E16227BB723008835BF /* B.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = B.png; sourceTree = "<group>"; };
 		24855E17227BB723008835BF /* buttonH.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonH.png; sourceTree = "<group>"; };
@@ -87,6 +96,19 @@
 		24BF3382225DA7A700D64E11 /* PixelfyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PixelfyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24BF3386225DA7A700D64E11 /* PixelfyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelfyUITests.swift; sourceTree = "<group>"; };
 		24BF3388225DA7A700D64E11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30FF81D177C6408A766D72A6 /* Pods-PixelfyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PixelfyUITests.debug.xcconfig"; path = "Target Support Files/Pods-PixelfyUITests/Pods-PixelfyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		78447FB8957AAFDDF2FA5676 /* Pods-Pixelfy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pixelfy.release.xcconfig"; path = "Target Support Files/Pods-Pixelfy/Pods-Pixelfy.release.xcconfig"; sourceTree = "<group>"; };
+		7943A72AEB0003DAFF386554 /* Pods-PixelfyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PixelfyTests.release.xcconfig"; path = "Target Support Files/Pods-PixelfyTests/Pods-PixelfyTests.release.xcconfig"; sourceTree = "<group>"; };
+		7F261436D6EB56B155689FF5 /* Pods-Pixelfy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pixelfy.debug.xcconfig"; path = "Target Support Files/Pods-Pixelfy/Pods-Pixelfy.debug.xcconfig"; sourceTree = "<group>"; };
+		8168D97A8DBAD0A699B127E5 /* Pods-PixelfyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PixelfyUITests.release.xcconfig"; path = "Target Support Files/Pods-PixelfyUITests/Pods-PixelfyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		ABEB99A75F55608CA52B4939 /* Pods_Pixelfy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pixelfy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C558B16F0C6DA5F9128E278C /* Pods_PixelfyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PixelfyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2C5496922824B5C0014A01E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D2C5496B22826D200014A01E /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		D2C54973228C76800014A01E /* bgm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgm.mp3; sourceTree = "<group>"; };
+		D2C54975228C78B50014A01E /* over.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = over.mp3; sourceTree = "<group>"; };
+		D2C54977228C91DF0014A01E /* readme.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = readme.rtf; sourceTree = "<group>"; };
+		F830CDE605CC19FBDD335A7F /* Pods-PixelfyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PixelfyTests.debug.xcconfig"; path = "Target Support Files/Pods-PixelfyTests/Pods-PixelfyTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A803F5DF34D7E5EFD692A719 /* Pods_Pixelfy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F2AFCBA508549414390E533 /* Pods_PixelfyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,12 +132,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05A27C94A5BAEBA4309007C3 /* Pods_PixelfyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F3380BE328941122D97E325 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F261436D6EB56B155689FF5 /* Pods-Pixelfy.debug.xcconfig */,
+				78447FB8957AAFDDF2FA5676 /* Pods-Pixelfy.release.xcconfig */,
+				F830CDE605CC19FBDD335A7F /* Pods-PixelfyTests.debug.xcconfig */,
+				7943A72AEB0003DAFF386554 /* Pods-PixelfyTests.release.xcconfig */,
+				30FF81D177C6408A766D72A6 /* Pods-PixelfyUITests.debug.xcconfig */,
+				8168D97A8DBAD0A699B127E5 /* Pods-PixelfyUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		24BF3354225DA7A300D64E11 = {
 			isa = PBXGroup;
 			children = (
@@ -121,17 +159,21 @@
 				24BF337A225DA7A700D64E11 /* PixelfyTests */,
 				24BF3385225DA7A700D64E11 /* PixelfyUITests */,
 				24BF335E225DA7A300D64E11 /* Products */,
+				D2C54973228C76800014A01E /* bgm.mp3 */,
+				D2C54975228C78B50014A01E /* over.mp3 */,
 				24855E18227BB723008835BF /* A.png */,
 				24855E16227BB723008835BF /* B.png */,
+				24855E6B228000DB008835BF /* PixelfyLogo.png */,
+				24855E6D22800C31008835BF /* pixelfyLaunchX.png */,
 				24855E17227BB723008835BF /* buttonH.png */,
 				24855E19227BB724008835BF /* buttons.png */,
 				24855E15227BB723008835BF /* start.png */,
-				24855E6B228000DB008835BF /* PixelfyLogo.png */,
-				24855E6D22800C31008835BF /* pixelfyLaunchX.png */,
 				24855E6F22800EE7008835BF /* pixelfyLaunchXmax.png */,
 				24855E7122801B1A008835BF /* pixelfybackgroundX.png */,
 				24855E7322801D13008835BF /* pausebackgroundX.png */,
 				24855E7522801E53008835BF /* playagain.png */,
+				0F3380BE328941122D97E325 /* Pods */,
+				B0B9E9C046313C839D56F728 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -163,6 +205,9 @@
 				24BF336F225DA7A700D64E11 /* LaunchScreen.storyboard */,
 				24BF3372225DA7A700D64E11 /* Info.plist */,
 				24855E1F227BCA3B008835BF /* CarGame.swift */,
+				D2C5496922824B5C0014A01E /* GoogleService-Info.plist */,
+				D2C5496B22826D200014A01E /* StartViewController.swift */,
+				D2C54977228C91DF0014A01E /* readme.rtf */,
 			);
 			path = Pixelfy;
 			sourceTree = "<group>";
@@ -185,6 +230,16 @@
 			path = PixelfyUITests;
 			sourceTree = "<group>";
 		};
+		B0B9E9C046313C839D56F728 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABEB99A75F55608CA52B4939 /* Pods_Pixelfy.framework */,
+				C558B16F0C6DA5F9128E278C /* Pods_PixelfyTests.framework */,
+				058B2CA7AF2122BD1F1F5D43 /* Pods_PixelfyUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -192,9 +247,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 24BF338B225DA7A700D64E11 /* Build configuration list for PBXNativeTarget "Pixelfy" */;
 			buildPhases = (
+				F92E90549F78C3D07353F6B4 /* [CP] Check Pods Manifest.lock */,
 				24BF3359225DA7A300D64E11 /* Sources */,
 				24BF335A225DA7A300D64E11 /* Frameworks */,
 				24BF335B225DA7A300D64E11 /* Resources */,
+				36A7BB3167775EF75984FDAB /* [CP] Embed Pods Frameworks */,
+				69C608C554B7196CB1A6682D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -209,6 +267,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 24BF338E225DA7A700D64E11 /* Build configuration list for PBXNativeTarget "PixelfyTests" */;
 			buildPhases = (
+				64061BDD720C17C23374F7FD /* [CP] Check Pods Manifest.lock */,
 				24BF3373225DA7A700D64E11 /* Sources */,
 				24BF3374225DA7A700D64E11 /* Frameworks */,
 				24BF3375225DA7A700D64E11 /* Resources */,
@@ -227,6 +286,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 24BF3391225DA7A700D64E11 /* Build configuration list for PBXNativeTarget "PixelfyUITests" */;
 			buildPhases = (
+				BA83EA1855949E44CF6C9239 /* [CP] Check Pods Manifest.lock */,
 				24BF337E225DA7A700D64E11 /* Sources */,
 				24BF337F225DA7A700D64E11 /* Frameworks */,
 				24BF3380225DA7A700D64E11 /* Resources */,
@@ -291,6 +351,7 @@
 			files = (
 				24BF336C225DA7A300D64E11 /* Main.storyboard in Resources */,
 				24855E1B227BB724008835BF /* B.png in Resources */,
+				D2C54976228C78B50014A01E /* over.mp3 in Resources */,
 				24855E7222801B1A008835BF /* pixelfybackgroundX.png in Resources */,
 				24855E1C227BB724008835BF /* buttonH.png in Resources */,
 				24855E6E22800C32008835BF /* pixelfyLaunchX.png in Resources */,
@@ -300,6 +361,8 @@
 				24855E7622801E54008835BF /* playagain.png in Resources */,
 				24BF336E225DA7A700D64E11 /* Assets.xcassets in Resources */,
 				24855E7422801D14008835BF /* pausebackgroundX.png in Resources */,
+				D2C54978228C91DF0014A01E /* readme.rtf in Resources */,
+				D2C5496A22824B5C0014A01E /* GoogleService-Info.plist in Resources */,
 				24855E6C228000DB008835BF /* PixelfyLogo.png in Resources */,
 				24BF3371225DA7A700D64E11 /* LaunchScreen.storyboard in Resources */,
 				24855E1D227BB724008835BF /* A.png in Resources */,
@@ -307,6 +370,7 @@
 				24855E64227BE8F4008835BF /* StartScene.sks in Resources */,
 				24855E1A227BB724008835BF /* start.png in Resources */,
 				24BF3365225DA7A300D64E11 /* Actions.sks in Resources */,
+				D2C54974228C76800014A01E /* bgm.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,12 +390,160 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		36A7BB3167775EF75984FDAB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pixelfy/Pods-Pixelfy-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pixelfy/Pods-Pixelfy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64061BDD720C17C23374F7FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PixelfyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69C608C554B7196CB1A6682D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pixelfy/Pods-Pixelfy-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAnonymousAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseEmailAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseFacebookAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebasePhoneAuthUI.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAnonymousAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseEmailAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseFacebookAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseGoogleAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebasePhoneAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pixelfy/Pods-Pixelfy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA83EA1855949E44CF6C9239 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PixelfyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F92E90549F78C3D07353F6B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pixelfy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		24BF3359225DA7A300D64E11 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				24855E20227BCA3B008835BF /* CarGame.swift in Sources */,
+				D2C5496C22826D200014A01E /* StartViewController.swift in Sources */,
 				24BF3367225DA7A300D64E11 /* GameScene.swift in Sources */,
 				24BF3369225DA7A300D64E11 /* GameViewController.swift in Sources */,
 				24855E6A227FD1AD008835BF /* GameHandler.swift in Sources */,
@@ -510,9 +722,11 @@
 		};
 		24BF338C225DA7A700D64E11 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F261436D6EB56B155689FF5 /* Pods-Pixelfy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N456XQN3N4;
 				INFOPLIST_FILE = Pixelfy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -527,9 +741,11 @@
 		};
 		24BF338D225DA7A700D64E11 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78447FB8957AAFDDF2FA5676 /* Pods-Pixelfy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N456XQN3N4;
 				INFOPLIST_FILE = Pixelfy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -544,6 +760,7 @@
 		};
 		24BF338F225DA7A700D64E11 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F830CDE605CC19FBDD335A7F /* Pods-PixelfyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -564,6 +781,7 @@
 		};
 		24BF3390225DA7A700D64E11 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7943A72AEB0003DAFF386554 /* Pods-PixelfyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -584,6 +802,7 @@
 		};
 		24BF3392225DA7A700D64E11 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30FF81D177C6408A766D72A6 /* Pods-PixelfyUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -603,6 +822,7 @@
 		};
 		24BF3393225DA7A700D64E11 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8168D97A8DBAD0A699B127E5 /* Pods-PixelfyUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
